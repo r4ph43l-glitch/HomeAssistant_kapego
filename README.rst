@@ -19,7 +19,7 @@ All of the protocol figured out by "reverse engineering" (the controller traffic
 Available Controller Types
 --------------------------
 
-.. csv-table:: Functionalities
+.. csv-table::
     :header: ,|SINGLE|, |WHITE|, |RGB|, |RGBW|
 
     "ON", |Y|, |Y|, |Y|, |Y|
@@ -33,4 +33,4 @@ Available Controller Types
 .. |RGB| image:: screenshots/readme/RF_RGB.png
 .. |WHITE| image:: screenshots/readme/RF_WHITE.png
 .. |SINGLE| image:: screenshots/readme/RF_SINGLE.png
-.. |Y| image:: https://img.icons8.com/?size=100&id=VFaz7MkjAiu0&format=png&color=000000
+.. |Y| image:: https://img.icons8.com/?size=50&id=VFaz7MkjAiu0&format=png&color=000000
