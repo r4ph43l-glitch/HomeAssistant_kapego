@@ -22,17 +22,17 @@ Available Controller Types
 .. csv-table::
     :header: ,|SINGLE|, |WHITE|, |RGB|, |RGBW|
 
-    "ON",           |Y|, |Y|, |Y|, |Y| "B "
-    "OFF",          |Y|, |Y|, |Y|, |Y| "A "
-    "COLOR",        |N|, |N|, |Y|, |Y| "@<num>"
-    "WHITE +",      |N|, |Y|, |N|, |Y| "C "
-    "WHITE -",      |N|, |Y|, |N|, |Y| "I "
-    "BRIGHTNESS +", (|Y|), |Y|, |Y|, |Y| "D "
-    "BRIGHTNESS -", (|Y|), |Y|, |Y|, |Y| "E "
-    "SPEED +",      |Y|, |Y|, |Y|, |Y| "G "
-    "SPEED -",      |Y|, |Y|, |Y|, |Y| "H "
-    "PROGRAM +",    |Y|, |Y|, |Y|, |Y| "J "
-    "PROGRAM -",    |Y|, |Y|, |Y|, |Y| "K "
+    "ON",           |Y|, |Y|, |Y|, |Y|
+    "OFF",          |Y|, |Y|, |Y|, |Y|
+    "COLOR",        |N|, |N|, |Y|, |Y|
+    "WHITE +",      |N|, |Y|, |N|, |Y|
+    "WHITE -",      |N|, |Y|, |N|, |Y|
+    "BRIGHTNESS +", (|Y|), |Y|, |Y|, |Y|
+    "BRIGHTNESS -", (|Y|), |Y|, |Y|, |Y|
+    "SPEED +",      |Y|, |Y|, |Y|, |Y|
+    "SPEED -",      |Y|, |Y|, |Y|, |Y|
+    "PROGRAM +",    |Y|, |Y|, |Y|, |Y|
+    "PROGRAM -",    |Y|, |Y|, |Y|, |Y|
 
 
 
