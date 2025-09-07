@@ -22,8 +22,17 @@ Available Controller Types
 .. csv-table::
     :header: ,|SINGLE|, |WHITE|, |RGB|, |RGBW|
 
-    "ON", |Y|, |Y|, |Y|, |Y|
-    "OFF", |Y|, |Y|, |Y|, |Y|
+    "ON",           |Y|, |Y|, |Y|, |Y| "B "
+    "OFF",          |Y|, |Y|, |Y|, |Y| "A "
+    "COLOR",        |N|, |N|, |Y|, |Y| "@<num>"
+    "WHITE +",      |N|, |Y|, |N|, |Y| "C "
+    "WHITE -",      |N|, |Y|, |N|, |Y| "I "
+    "BRIGHTNESS +", (|Y|), |Y|, |Y|, |Y| "D "
+    "BRIGHTNESS -", (|Y|), |Y|, |Y|, |Y| "E "
+    "SPEED +",      |Y|, |Y|, |Y|, |Y| "G "
+    "SPEED -",      |Y|, |Y|, |Y|, |Y| "H "
+    "PROGRAM +",    |Y|, |Y|, |Y|, |Y| "J "
+    "PROGRAM -",    |Y|, |Y|, |Y|, |Y| "K "
 
 
 
@@ -33,4 +42,5 @@ Available Controller Types
 .. |RGB| image:: screenshots/readme/RF_RGB.png
 .. |WHITE| image:: screenshots/readme/RF_WHITE.png
 .. |SINGLE| image:: screenshots/readme/RF_SINGLE.png
-.. |Y| image:: https://img.icons8.com/?size=50&id=VFaz7MkjAiu0&format=png&color=000000
+.. |Y| image:: https://img.icons8.com/?size=25&id=VFaz7MkjAiu0&format=png&color=000000
+.. |N| image:: https://img.icons8.com/?size=25&id=OZuepOQd0omj&format=png&color=000000

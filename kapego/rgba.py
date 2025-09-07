@@ -32,8 +32,17 @@ from . import DOMAIN
 
 # Command Reference
 COMMANDS={
-    "ON":  "B ",
-    "OFF": "A ",
+    "ON" :"B ",                     # 0x42 0x00
+    "OFF" :"A ",                    # 0x41 0x00
+    "COLOR" : "@{val}",             # @<num>" 0x40 == @, 0x00-0xff for color
+    "WHITE_ADD" :"C ",              # 0x43 0x00
+    "WHITE_SUB" :"I ",              # 0x49 0x00
+    "BRIGHTNESS_ADD" :"D ",         # 0x44 0x00
+    "BRIGHTNESS_SUB" :"E ",         # 0x45 0x00
+    "SPEED_ADD" :"G ",              # 0x47 0x00
+    "SPEED_SUB" :"H ",              # 0x48 0x00
+    "PROGRAM_ADD" :"J ",            # 0x4a 0x00
+    "PROGRAM_SUB" :"K ",            # 0x4b 0x00
 }
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
@@ -42,10 +51,8 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 async def async_setup_entry(hass, entry, async_add_entities):
     async_add_entities([KapegoRGBA(**entry.data)])
 
-
-class KapegoRGBA(ControllerEntity):
-    """ RGBA Controller """
-
+class KapegoSINGLE(ControllerEntity):
+    """ The "SIMPLEST" ONE """
     def __init__(self, **kwargs):
         self._attr_name = kwargs["name"]
         _idn = kwargs["name"].lower().replace(' ', '_')
@@ -77,3 +84,16 @@ class KapegoRGBA(ControllerEntity):
             sock.sendto(payload, (self._host, self._ip))
         finally:
             sock.close()
+
+class KapegoWHITE(KapegoSINGLE):
+    """ Warm / Cold white Extension of SINGLE
+    """
+
+class KapegoRGB(KapegoWHITE):
+    """ Add colorwheel functionality
+    """
+
+class KapegoRGBA(KapegoRGB):
+    """ RGBA Controller
+        Expands RGB
+    """
