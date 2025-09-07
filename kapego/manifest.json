@@ -1,0 +1,8 @@
+{
+    "domain": "kapego",
+    "name": "LightBridge",
+    "version": "0.0.1",
+    "requirements": [],
+    "codeowners": ["r4ph43l-glitch", "gkathan"],
+    "config_flow": false, // set to true as soon as you got sth
+}
